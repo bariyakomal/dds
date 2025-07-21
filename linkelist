@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+struct Node{
+    int data;
+    Node*next;
+};
+Node*head=NULL;
+void insertEND(int num){
+    Node*newNode = new Node();
+    newNode->data=num;
+    newNode->next=NULL;
+    if(head==NULL){
+        head=newNode;
+        cout<<num<<"inserted"<<endl;
+    }else{
+        Node*temp=head;
+        while(temp->next !=NULL){
+            temp=temp->next;
+        }
+            temp->next=newNode;
+            cout<<num<<"inserted"<<endl;
+        }
+    }
+
+int main() {
+    insertEND(10);
+    insertEND(20);
+    insertEND(30);
+    insertEND(40);
+}
