@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int GCD(int a,int b){
+    if(b==0){
+        return a;
+    }else{
+        return GCD(b,a%b);
+    }
+}
+int main() {
+    int a=12;
+    int b=18;
+    cout<<GCD(a,b);
+    return 0;
+}
+ALGORITHM:-
+1.TAKE TWO USER INPUTA,B
+2.IF B==0,A IS ANSWER ELS CHANGE THE VALUE OF A,B,A=B ,B=A%B
+3.NOW REPEAT SAME STEP 2 AGAIN UNTIN YOU GET B=0
