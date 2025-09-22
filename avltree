@@ -1,0 +1,45 @@
+oblem Statement:
+Write a program to convert an infix expression (e.g., A+B*C) into a postfix expression (e.g., ABC*+). Use a stack to handle operator precedence and parentheses.
+
+
+Input Format:
+Enter a valid infix expression as a string.
+
+The expression contains operands (A–Z or digits) and operators + - * / ^ with parentheses ( and ).
+
+
+Output Format:
+Display the corresponding postfix expression.
+
+
+Constraints:
+Expression length ≤ 100
+
+Operands are single characters (A–Z, a–z, 0–9)
+
+Operators: + - * / ^
+
+Parentheses may be included.
+
+Assume valid infix input.ample Input 1:
+A+B*C
+
+
+Sample Output 1:
+ABC*+
+
+
+Sample Input 2:
+(A+B)*C
+
+
+Sample Output 2:
+AB+C*
+
+
+Sample Input 3:
+((A+B)*C)-(D/E)
+
+
+Sample Output 3:
+AB+C*DE/-
